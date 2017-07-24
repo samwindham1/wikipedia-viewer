@@ -1,0 +1,78 @@
+// Utilities ----------------
+.border {
+  border: dashed 1px black;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.content, .content div {
+  // border: dashed 1px #666;
+}
+
+// Element styles -----------
+body {
+  min-width: 400px;
+  min-height: 500px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Class styles ------------
+
+// Contatiners
+.content {
+  height: 90vh;
+}
+.footer {
+  height: 60px;
+  padding: 20px 0px;
+  color: #666;
+  .link {
+    color: #666;
+    margin-left: 4px;
+    z-index:50;
+    font-size:0.9em;
+    vertical-align: middle; 
+  }
+}
+
+// Elements
+.el-1 {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 150px;
+  margin-bottom: 15px;
+}
+#wiki {
+  visibility: hidden;
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .list-group-item {
+    &:hover {
+      background-color: #eee;
+    }
+    .title {
+    }
+    .snippet {
+    }
+  }
+}
+.random {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+// Form
+#input-form-wrapper {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
