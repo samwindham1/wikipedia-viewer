@@ -1,4 +1,4 @@
-#Wikipedia Viewer
+# Wikipedia Viewer
 
 Using [Wikpedia API](https://www.mediawiki.org/wiki/API:Main_page) to request search results.
 
