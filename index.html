@@ -2,56 +2,55 @@
 <html >
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wikipedia Viewer</title>
-  
-  
+
+
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans|Poiret+One|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-      <link rel="stylesheet" href="css/style.css">
 
-  
 </head>
 
 <body>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans|Poiret+One|Raleway" rel="stylesheet">
+  <div class="container-fluid">
+    <div class="row-fluid d-flex justify-content-center content">
+      <div class="col-xl-9 col-lg-10 col-sm-11 ">
 
-<div class="container-fluid">
-  <div class="row-fluid d-flex justify-content-center content">
-    <div class="col-xl-9 col-lg-10 col-sm-11 ">
-
-      <div class="el-1 text-center">
-        <a href="https://en.wikipedia.org/wiki/Special:Random" title="Click for random page..." class="random"><h1>Access Wikipedia</h1></a>
-      </div>
-
-      <div class="el-2 text-center">
-        <div class="form-group col-4 center" id="input-form-wrapper">
-
-          <form id="form-1" action="#">
-            <input class="form-control text-center" type="text" id="input" value="Search for page..." autocomplete="off">
-          </form>
-
-          <div class="text-left">
-            <ul id="wiki" class="list-group"></ul>
-          </div>
-
+        <div class="el-1 text-center">
+          <a href="https://en.wikipedia.org/wiki/Special:Random" title="Click for random page..." class="random"><h1>Access Wikipedia</h1></a>
         </div>
+
+        <div class="el-2 text-center">
+          <div class="form-group col-4 center" id="input-form-wrapper">
+
+            <form id="form-1" action="#">
+              <input class="form-control text-center" type="text" id="input" value="Search for page..." autocomplete="off">
+            </form>
+
+            <div class="text-left">
+              <ul id="wiki" class="list-group"></ul>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-
     </div>
-  </div>
 
-  <div class="row-fluid footer fixed-bottom">
-    <div class="col-12 center text-center">
-      <span><i class="fa fa-github fa-lg" aria-hidden="true"></i><a href="https://github.com/samwindham1" style="margin-right:50px;" class="link" title="See Sam on Github">Sam Windham</a></span>
-      <span><i class="fa fa-external-link fa-lg" aria-hidden="true"></i><a href="#" title="Powered by (temp)" class="link">Link to API</a></span>
+    <div class="row-fluid footer fixed-bottom">
+      <div class="col-12 center text-center">
+        <span><i class="fa fa-github fa-lg" aria-hidden="true"></i><a href="https://github.com/samwindham1" style="margin-right:50px;" class="link" title="See Sam on Github">Sam Windham</a></span>
+        <span><i class="fa fa-external-link fa-lg" aria-hidden="true"></i><a href="https://www.mediawiki.org/wiki/API:Main_page" title="Powered by (temp)" class="link">Link to API</a></span>
+      </div>
     </div>
-  </div>
 
-</div>
+  </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://use.fontawesome.com/ee0b815467.js'></script>
+  <script src='https://use.fontawesome.com/ee0b815467.js'></script>
 
-    <script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 </html>
