@@ -4,9 +4,9 @@ var data;
 function get_from_api(val) {
   if(val) {
     $.ajax({
-      url: '//en.wikipedia.org/w/api.php',
-      data: { action: 'query', list: 'search', srsearch: val, format: 'json' },
-      dataType: 'json',
+      url: 'https://en.wikipedia.org/w/api.php',
+      data: { action: 'query', list: 'search', srsearch: val, format: 'json'}, //origin: 'https://www.mediawiki.org'},
+      dataType: 'jsonp',
       success: function(r) {
         if (typeof r === 'string') {
           r = JSON.parse(r);
@@ -21,7 +21,7 @@ function get_from_api(val) {
         }
       },
       error: function(xhr, ajaxOptions, thrownError) {
-        alert('Search error: ' + xhr.responseText + '.</br>Refresh page.');
+        alert('Search error: ' + xhr.responseText + '. Refresh page.');
       }
     });
   }
